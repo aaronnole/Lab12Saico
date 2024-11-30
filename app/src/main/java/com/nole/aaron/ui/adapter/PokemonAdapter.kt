@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.nole.aaron.data.database.model.PokemonResponse
 import com.nole.aaron.databinding.ItemPokemonBinding
 
 class PokemonAdapter(

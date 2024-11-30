@@ -2,6 +2,7 @@ import android.content.Context
 import android.util.Patterns
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.nole.aaron.data.database.SharedPreferencesRepository
 
 class RegisterViewModel(
     private val context: Context

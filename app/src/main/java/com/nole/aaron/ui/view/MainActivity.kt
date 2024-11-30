@@ -3,6 +3,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
+import com.nole.aaron.data.database.model.PokemonResponse
 import com.nole.aaron.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

@@ -1,4 +1,5 @@
-package com.nole.aaron
+package com.nole.aaron.data.database.network
+import com.nole.aaron.data.model.PokemonListResponse
 import retrofit2.Response
 import retrofit2.http.GET
 

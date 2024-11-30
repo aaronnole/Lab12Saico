@@ -1,4 +1,4 @@
-package com.nole.aaron
+package com.nole.aaron.data.database.model
 
 
 data class PokemonResponse(

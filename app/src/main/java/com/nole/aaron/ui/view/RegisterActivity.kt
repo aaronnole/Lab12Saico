@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.nole.aaron.databinding.ActivityRegisterBinding
+import com.nole.aaron.ui.view.LoginActivity
 
 class RegisterActivity : AppCompatActivity() {
 
