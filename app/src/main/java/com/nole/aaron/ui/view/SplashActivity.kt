@@ -1,5 +1,6 @@
-package com.nole.aaron
+package com.nole.aaron.ui.view
 
+import MainActivity
 import com.nole.aaron.data.database.SharedPreferencesRepository
 import android.content.Intent
 import android.os.Bundle
@@ -8,8 +9,6 @@ import android.os.Looper
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.nole.aaron.databinding.ActivitySplashBinding
-import com.nole.aaron.ui.view.LoginActivity
-import com.nole.aaron.ui.view.MainActivity
 import com.rommansabbir.animationx.Attention
 import com.rommansabbir.animationx.animationXAttention
 

@@ -1,3 +1,5 @@
+package com.nole.aaron.ui.viewmodel
+
 import android.content.Context
 import android.util.Patterns
 import androidx.lifecycle.MutableLiveData

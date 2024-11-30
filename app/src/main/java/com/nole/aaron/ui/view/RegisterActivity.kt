@@ -1,12 +1,11 @@
-package com.nole.aaron
+package com.nole.aaron.ui.view
 
-import RegisterViewModel
+import com.nole.aaron.ui.viewmodel.RegisterViewModel
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.nole.aaron.databinding.ActivityRegisterBinding
-import com.nole.aaron.ui.view.LoginActivity
 
 class RegisterActivity : AppCompatActivity() {
 

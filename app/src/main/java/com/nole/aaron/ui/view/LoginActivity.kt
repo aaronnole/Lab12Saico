@@ -1,12 +1,12 @@
-package com.nole.aaron
+package com.nole.aaron.ui.view
 
-import LoginViewModel
+import MainActivity
+import com.nole.aaron.ui.viewmodel.LoginViewModel
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import android.content.Intent
 import android.widget.Toast
 import com.nole.aaron.databinding.ActivityLoginBinding
-
 
 class LoginActivity : AppCompatActivity() {
 

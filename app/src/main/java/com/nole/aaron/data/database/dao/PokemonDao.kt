@@ -1,4 +1,4 @@
-package com.nole.aaron
+package com.nole.aaron.data.database.dao
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy

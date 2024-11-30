@@ -1,4 +1,4 @@
-package com.nole.aaron.data.database.entities
+package com.nole.aaron.data.database
 import androidx.room.Database
 import androidx.room.RoomDatabase
 import com.nole.aaron.data.database.dao.PokemonDao

@@ -1,46 +1,22 @@
-package com.nole.aaron
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.isVisible
-import com.nole.aaron.data.database.model.PokemonResponse
+import androidx.navigation.findNavController
+import androidx.navigation.ui.setupWithNavController
+import com.nole.aaron.R
 import com.nole.aaron.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    private var listPokemon: List<PokemonResponse> = emptyList()
-
-    private val adapter by lazy { PokemonAdapter(listPokemon) }
 
     private lateinit var binding : ActivityMainBinding
 
-    private val viewModel by lazy { MainViewModel() }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.rvTinderPokemon.adapter = adapter
-        observeValues()
-    }
 
-    private fun observeValues() {
-        viewModel.isLoading.observe(this) { isLoading ->
-            binding.progressBar.isVisible = isLoading
+        val navController = findNavController(R.id.nav_host_fragment)
+        binding.navView.setupWithNavController(navController)
         }
-
-        viewModel.pokemonList.observe(this) { pokemonList ->
-            adapter.list = pokemonList
-            adapter.notifyDataSetChanged()
-        }
-
-        viewModel.errorApi.observe(this) { errorMessage ->
-            showMessage(errorMessage)
-        }
-    }
-
-    private fun showMessage(message: String) {
-        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
-    }
 }
-
